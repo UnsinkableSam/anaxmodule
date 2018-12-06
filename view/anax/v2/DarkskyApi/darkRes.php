@@ -1,11 +1,19 @@
 <?php
 namespace Anax\View;
 
-if (array_key_exists("latitude", $res)) {
+
+
+
     $res1  = (array) $res[0];
+    $resObj = json_decode($res1[0]);
+  if (isset($resObj->latitude)) {
+
     $resThirty1  = (array) $resThirty;
-    $data = $res1["daily"]->data;
+    $data = $resObj->daily->data;
+
+
     $dataThirty = $resThirty1;
+
 
 
 
@@ -44,10 +52,8 @@ if (array_key_exists("latitude", $res)) {
 
       </tr>
       <tr>
-        <td> <?php echo $res1["latitude"] ?> </td>
-      </tr>
-      <tr>
-        <td> <?php echo $res1["longitude"] ?> </td>
+        <td> <?php echo $resObj->latitude ?> </td>
+        <td> <?php echo $resObj->longitude ?> </td>
       </tr>
     </tbody>
   </table>
@@ -57,7 +63,7 @@ if (array_key_exists("latitude", $res)) {
   <h3>Past week</h3>
   <br>
   <br>
-    <?php for ($i=0; $i < count($res1); $i++) { ?>
+    <?php for ($i=0; $i < count($data); $i++) { ?>
       <div style="border-style: solid; float:left; font-size: 0.8rem; width: 10rem; height:12rem;">
           <table>
           <tbody>
