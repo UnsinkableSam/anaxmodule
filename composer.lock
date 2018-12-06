@@ -4,49 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee21e87b3ac9e2fb6090a0c3b244c032",
+    "content-hash": "457619448c47639d9e98eb7440817354",
     "packages": [
-        {
-            "name": "anax/anax-cli",
-            "version": "v1.1.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/canax/anax-cli.git",
-                "reference": "c98a69978d8db15267818d88b86a0d1df9d98618"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/canax/anax-cli/zipball/c98a69978d8db15267818d88b86a0d1df9d98618",
-                "reference": "c98a69978d8db15267818d88b86a0d1df9d98618",
-                "shasum": ""
-            },
-            "bin": [
-                "src/anax.bash"
-            ],
-            "type": "utility",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mikael Roos",
-                    "email": "mos@dbwebb.se",
-                    "homepage": "https://dbwebb.se",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Anax CLI tool.",
-            "homepage": "https://dbwebb.se/anax",
-            "keywords": [
-                "boilerplate",
-                "education",
-                "framework",
-                "micro",
-                "mvc"
-            ],
-            "time": "2018-10-31T15:37:02+00:00"
-        },
         {
             "name": "anax/anax-flat",
             "version": "v1.0.12",
@@ -591,6 +550,58 @@
                 "mvc"
             ],
             "time": "2018-08-15T14:59:59+00:00"
+        },
+        {
+            "name": "anax/remserver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/canax/remserver.git",
+                "reference": "83a62fa80ece7dc2c696a4bf18919d460d56117e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/canax/remserver/zipball/83a62fa80ece7dc2c696a4bf18919d460d56117e",
+                "reference": "83a62fa80ece7dc2c696a4bf18919d460d56117e",
+                "shasum": ""
+            },
+            "require": {
+                "anax/commons": "^2.0.0@beta",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "anax/anax-lite": "^1.0.24",
+                "phpmetrics/phpmetrics": "^2",
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Anax\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "mos@dbwebb.se",
+                    "homepage": "https://dbwebb.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Anax remserver module.",
+            "homepage": "https://dbwebb.se/anax",
+            "keywords": [
+                "boilerplate",
+                "education",
+                "framework",
+                "micro",
+                "mvc"
+            ],
+            "time": "2018-11-27T08:30:26+00:00"
         },
         {
             "name": "anax/request",
@@ -2838,7 +2849,9 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": [],
+    "stability-flags": {
+        "anax/remserver": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

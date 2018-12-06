@@ -1,1 +1,0 @@
-../anax/anax-cli/src/anax.bash

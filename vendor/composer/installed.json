@@ -1,48 +1,5 @@
 [
     {
-        "name": "anax/anax-cli",
-        "version": "v1.1.11",
-        "version_normalized": "1.1.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/canax/anax-cli.git",
-            "reference": "c98a69978d8db15267818d88b86a0d1df9d98618"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/canax/anax-cli/zipball/c98a69978d8db15267818d88b86a0d1df9d98618",
-            "reference": "c98a69978d8db15267818d88b86a0d1df9d98618",
-            "shasum": ""
-        },
-        "time": "2018-10-31T15:37:02+00:00",
-        "bin": [
-            "src/anax.bash"
-        ],
-        "type": "utility",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mikael Roos",
-                "email": "mos@dbwebb.se",
-                "homepage": "https://dbwebb.se",
-                "role": "Developer"
-            }
-        ],
-        "description": "Anax CLI tool.",
-        "homepage": "https://dbwebb.se/anax",
-        "keywords": [
-            "boilerplate",
-            "education",
-            "framework",
-            "micro",
-            "mvc"
-        ]
-    },
-    {
         "name": "anax/anax-flat",
         "version": "v1.0.12",
         "version_normalized": "1.0.12.0",
@@ -600,6 +557,60 @@
             }
         ],
         "description": "Anax Page module, wrapper to ease create web pages.",
+        "homepage": "https://dbwebb.se/anax",
+        "keywords": [
+            "boilerplate",
+            "education",
+            "framework",
+            "micro",
+            "mvc"
+        ]
+    },
+    {
+        "name": "anax/remserver",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/canax/remserver.git",
+            "reference": "83a62fa80ece7dc2c696a4bf18919d460d56117e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/canax/remserver/zipball/83a62fa80ece7dc2c696a4bf18919d460d56117e",
+            "reference": "83a62fa80ece7dc2c696a4bf18919d460d56117e",
+            "shasum": ""
+        },
+        "require": {
+            "anax/commons": "^2.0.0@beta",
+            "php": ">=7.2"
+        },
+        "require-dev": {
+            "anax/anax-lite": "^1.0.24",
+            "phpmetrics/phpmetrics": "^2",
+            "phpunit/phpunit": "^7"
+        },
+        "time": "2018-11-27T08:30:26+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Anax\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "mos@dbwebb.se",
+                "homepage": "https://dbwebb.se",
+                "role": "Developer"
+            }
+        ],
+        "description": "Anax remserver module.",
         "homepage": "https://dbwebb.se/anax",
         "keywords": [
             "boilerplate",
