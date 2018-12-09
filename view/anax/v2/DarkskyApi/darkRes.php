@@ -9,7 +9,7 @@ namespace Anax\View;
   if (isset($resObj->latitude)) {
     $streetinfo = json_decode($streetname);
     $streetinfoArray  = (array) $streetinfo;
-  
+
     $resThirty1  = (array) $resThirty;
     $data = $resObj->daily->data;
 
@@ -53,7 +53,7 @@ $cord = $resObj->longitude  .  "%2C"  . $resObj->latitude  ."&amp;layer=mapnik&a
         <th> longitude</th>
         <th> County </th>
         <th> state </th>
-        <th> postcode </th>
+
       </tr>
     </thead>
     <tbody>
@@ -65,7 +65,7 @@ $cord = $resObj->longitude  .  "%2C"  . $resObj->latitude  ."&amp;layer=mapnik&a
         <td> <?php echo $resObj->longitude ?> </td>
           <td> <?php echo $streetinfoArray["address"]->county ?> </td>
           <td> <?php echo $streetinfoArray["address"]->state ?> </td>
-          <td> <?php echo $streetinfoArray["address"]->postcode ?> </td>
+
       </tr>
     </tbody>
   </table>
