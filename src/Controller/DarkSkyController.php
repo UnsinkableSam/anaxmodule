@@ -92,7 +92,7 @@ class DarkSkyController implements ContainerInjectableInterface
           //   return $res[0];
           // }
 
-
+        $streetname = $darkClass->streetActionGet($coordinates->longitude, $coordinates->latitude);
         //
         // $refinedDates = [];
         //
@@ -108,7 +108,8 @@ class DarkSkyController implements ContainerInjectableInterface
                   "header" => "hello",
                   "res" => $res,
                   "ogDate" => $time,
-                  "resThirty" => $resThirtyDaysRequest
+                  "resThirty" => $resThirtyDaysRequest,
+                  "streetname" => $streetname
               ]
           );
           return $page->render([

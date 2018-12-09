@@ -7,7 +7,9 @@ namespace Anax\View;
     $res1  = (array) $res[0];
     $resObj = json_decode($res1[0]);
   if (isset($resObj->latitude)) {
-
+    $streetinfo = json_decode($streetname);
+    $streetinfoArray  = (array) $streetinfo;
+  
     $resThirty1  = (array) $resThirty;
     $data = $resObj->daily->data;
 
@@ -15,7 +17,7 @@ namespace Anax\View;
     $dataThirty = $resThirty1;
 
 
-
+$cord = $resObj->longitude  .  "%2C"  . $resObj->latitude  ."&amp;layer=mapnik&amp;marker=" . $resObj->latitude . "%2C" . $resObj->longitude   . "";
 
   // $resDecoded = parse_str($res, $output);
   // // print_r($output[0]);
@@ -38,6 +40,10 @@ namespace Anax\View;
   // print_r($myobj2);
   // print_r($array["daily"]);
     ?>
+<br>
+<br>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox= <?php echo  $cord ?>  " style="border: 1px solid black"></iframe>
+    <br/><small><a href="https://www.openstreetmap.org/#map=1/" . <?php echo $resObj->latitude  ?> . "/" . <?php echo $resObj->longitude  ?> . "">Visa större karta</a></small>
 
 
   <table>
@@ -45,6 +51,9 @@ namespace Anax\View;
       <tr>
         <th> latitude</th>
         <th> longitude</th>
+        <th> County </th>
+        <th> state </th>
+        <th> postcode </th>
       </tr>
     </thead>
     <tbody>
@@ -54,6 +63,9 @@ namespace Anax\View;
       <tr>
         <td> <?php echo $resObj->latitude ?> </td>
         <td> <?php echo $resObj->longitude ?> </td>
+          <td> <?php echo $streetinfoArray["address"]->county ?> </td>
+          <td> <?php echo $streetinfoArray["address"]->state ?> </td>
+          <td> <?php echo $streetinfoArray["address"]->postcode ?> </td>
       </tr>
     </tbody>
   </table>
