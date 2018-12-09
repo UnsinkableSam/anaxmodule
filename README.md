@@ -3,12 +3,12 @@ This is how you install the module into an existing Anax installation.
 
 First go into composer.json and add following code snippet.
 
-
+<pre>
 "require": {
-
-    "anax/anaxmodule": "^v2.5.2"
+    "anax/anax-ramverk1-me": "^1.0.0",
+    "danak/anaxmodule": "^v2.5.2"
 }
-
+</pre>
 
 After that use the command "composer update".
 
