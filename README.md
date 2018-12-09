@@ -20,3 +20,6 @@ bash vendor/danak/anaxmodule/.anax/scaffold/postprocess.d/700_anaxmodule.bash
 
 
 Now it all should be installed and working.
+
+
+Have fun!
