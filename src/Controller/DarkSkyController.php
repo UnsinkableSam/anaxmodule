@@ -16,7 +16,7 @@ class DarkSkyController implements ContainerInjectableInterface
           $title = " | Ip Json API";
           $page = $this->di->get("page");
           $page->add(
-              "anax/v2/darkSkyApi/darkSkyApi",
+              "anax/v2/DarkskyApi/darkSkyApi",
               [
                   "header" => "hello",
                   "text" => "text",
@@ -34,7 +34,7 @@ class DarkSkyController implements ContainerInjectableInterface
           $title = " | Ip Json API";
           $page = $this->di->get("page");
           $page->add(
-              "anax/v2/darkSkyApi/darkSkyApiJson",
+              "anax/v2/DarkskyApi/darkSkyApiJson",
               [
                   "header" => "hello",
                   "text" => "text",
@@ -76,7 +76,7 @@ class DarkSkyController implements ContainerInjectableInterface
         $coordinates = (object) ["latitude" => $obj->latitude];
         $coordinates->longitude = $obj->longitude;
 
-        $darkClass = new \Anax\darkSkyApi\darkSky();
+        $darkClass = new \Anax\darkSkyApi\DarkSky();
         array_push($array, $coordinates);
         $res = $darkClass::wheatherActionGet($array, $darkSkyKey);
 
@@ -103,7 +103,7 @@ class DarkSkyController implements ContainerInjectableInterface
           $title = " | Ip Json API";
           $page = $this->di->get("page");
           $page->add(
-              "anax/v2/darkSkyApi/darkRes",
+              "anax/v2/DarkskyApi/darkRes",
               [
                   "header" => "hello",
                   "res" => $res,
@@ -147,7 +147,7 @@ class DarkSkyController implements ContainerInjectableInterface
         $coordinates->longitude = $obj->longitude;
 
 
-        $darkClass = new \Anax\darkSkyApi\darkSky();
+        $darkClass = new \Anax\darkSkyApi\DarkSky();
         array_push($array, $coordinates);
         $res = $darkClass::wheatherActionGet($array, $darkSkyKey);
 
@@ -158,14 +158,7 @@ class DarkSkyController implements ContainerInjectableInterface
 
         $dates = $darkClass::wheatherSevenActionGet(30, $time, $array);
         $resThirtyDaysRequest = $darkClass::wheatherThirtyActionGet($array, $dates, $darkSkyKey);
-          // try {
-          //   if (array_key_exists("code",$res)) {
-          //     throw new \Exception("must be ip or coordinates");
-          //   }
-          //
-          // } catch (\Exception $e) {
-          //   return $res;
-          // }
+
         array_push($resArray, json_decode($res[0], JSON_PRETTY_PRINT));
         array_push($resArray, $resThirtyDaysRequest);
 
