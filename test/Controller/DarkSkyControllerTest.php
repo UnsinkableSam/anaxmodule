@@ -56,6 +56,7 @@ class DarkSkyControllerTest extends TestCase
 
     public function testDarkActionPost()
     {
+
         $res = $this->controller->darkActionPost("74.125.224.72");
         $testObj = gettype($res);
         print_r($testObj);

@@ -76,9 +76,9 @@ class RestApiExternalController implements ContainerInjectableInterface
 
         // $json = json_decode($res);
 
-        $res_string = json_encode($res, JSON_PRETTY_PRINT);
+        $resString = json_encode($res, JSON_PRETTY_PRINT);
 
-        return $res_string;
+        return $resString;
     }
 
 
@@ -102,8 +102,8 @@ class RestApiExternalController implements ContainerInjectableInterface
 
         // $json = json_decode($res);
 
-        $res_string = json_encode($res, JSON_PRETTY_PRINT);
+        $resString = json_encode($res, JSON_PRETTY_PRINT);
 
-        return $res_string;
+        return $resString;
     }
 }

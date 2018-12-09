@@ -80,7 +80,7 @@ class DarkSkyController implements ContainerInjectableInterface
         array_push($array, $coordinates);
         $res = $darkClass::wheatherActionGet($array, $darkSkyKey);
 
-        $dates = $darkClass::wheatherSevenActionGet(30, $time, $array, $darkSkyKey);
+        $dates = $darkClass::wheatherSevenActionGet(30, $time);
         $resThirtyDaysRequest = $darkClass::wheatherThirtyActionGet($array, $dates, $darkSkyKey);
 
           // try {
@@ -156,9 +156,16 @@ class DarkSkyController implements ContainerInjectableInterface
 
 
 
-        $dates = $darkClass::wheatherSevenActionGet(30, $time, $array);
+        $dates = $darkClass::wheatherSevenActionGet(30, $time);
         $resThirtyDaysRequest = $darkClass::wheatherThirtyActionGet($array, $dates, $darkSkyKey);
-
+          // try {
+          //   if (array_key_exists("code",$res)) {
+          //     throw new \Exception("must be ip or coordinates");
+          //   }
+          //
+          // } catch (\Exception $e) {
+          //   return $res;
+          // }
         array_push($resArray, json_decode($res[0], JSON_PRETTY_PRINT));
         array_push($resArray, $resThirtyDaysRequest);
 

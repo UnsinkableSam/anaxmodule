@@ -1,12 +1,9 @@
 <?php
 namespace Anax\View;
 
-
-
-
-    $res1  = (array) $res[0];
-    $resObj = json_decode($res1[0]);
-  if (isset($resObj->latitude)) {
+$res1  = (array) $res[0];
+$resObj = json_decode($res1[0]);
+if (isset($resObj->latitude)) {
     $streetinfo = json_decode($streetname);
     $streetinfoArray  = (array) $streetinfo;
 
@@ -17,7 +14,7 @@ namespace Anax\View;
     $dataThirty = $resThirty1;
 
 
-$cord = $resObj->longitude  .  "%2C"  . $resObj->latitude  ."&amp;layer=mapnik&amp;marker=" . $resObj->latitude . "%2C" . $resObj->longitude   . "";
+    $cord = $resObj->longitude  .  "%2C"  . $resObj->latitude  ."&amp;layer=mapnik&amp;marker=" . $resObj->latitude . "%2C" . $resObj->longitude   . "";
 
   // $resDecoded = parse_str($res, $output);
   // // print_r($output[0]);

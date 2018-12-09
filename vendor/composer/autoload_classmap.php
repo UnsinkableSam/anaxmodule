@@ -6,13 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CAsciiArt' => $vendorDir . '/mos/cimage/CAsciiArt.php',
-    'CCache' => $vendorDir . '/mos/cimage/CCache.php',
-    'CFastTrackCache' => $vendorDir . '/mos/cimage/CFastTrackCache.php',
-    'CHttpGet' => $vendorDir . '/mos/cimage/CHttpGet.php',
-    'CImage' => $vendorDir . '/mos/cimage/CImage.php',
-    'CRemoteImage' => $vendorDir . '/mos/cimage/CRemoteImage.php',
-    'CWhitelist' => $vendorDir . '/mos/cimage/CWhitelist.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
     'PHPUnit\\Framework\\AssertionFailedError' => $vendorDir . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
@@ -151,6 +144,7 @@ return array(
     'PHPUnit\\Runner\\AfterSuccessfulTestHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/AfterSuccessfulTestHook.php',
     'PHPUnit\\Runner\\AfterTestErrorHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/AfterTestErrorHook.php',
     'PHPUnit\\Runner\\AfterTestFailureHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/AfterTestFailureHook.php',
+    'PHPUnit\\Runner\\AfterTestHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/AfterTestHook.php',
     'PHPUnit\\Runner\\AfterTestWarningHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/AfterTestWarningHook.php',
     'PHPUnit\\Runner\\BaseTestRunner' => $vendorDir . '/phpunit/phpunit/src/Runner/BaseTestRunner.php',
     'PHPUnit\\Runner\\BeforeFirstTestHook' => $vendorDir . '/phpunit/phpunit/src/Runner/Hook/BeforeFirstTestHook.php',

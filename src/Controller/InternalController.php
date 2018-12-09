@@ -66,7 +66,7 @@ class InternalController implements ContainerInjectableInterface
 
 
 
-    public function ipinfoAction($ipAdress = null) : object
+    public function ipinfoAction() : object
     {
 
         $title = " | Ip info";

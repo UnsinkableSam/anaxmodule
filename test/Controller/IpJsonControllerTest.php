@@ -54,7 +54,7 @@ class IpJsonControllerTest extends TestCase
     {
 
 
-          $controller = new IpJsonController();
+
 
           $this->controller->setDI($this->di);
           $object = $this->controller->validateipActionPost("2001:0db8:85a3:08d3:1319:8a2e:0370:7334");
@@ -85,7 +85,6 @@ class IpJsonControllerTest extends TestCase
     {
 
 
-          $controller = new IpJsonController();
 
           $this->controller->setDI($this->di);
           $object = $this->controller->validateipActionGet("2001:0db8:85a3:08d3:1319:8a2e:0370:7334");
