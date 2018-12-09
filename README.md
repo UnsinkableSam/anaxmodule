@@ -6,7 +6,7 @@ First go into composer.json and add following code snippet.
 <pre>
 "require": {
     "anax/anax-ramverk1-me": "^1.0.0",
-    "danak/anaxmodule": "^v2.5.2"
+    "danak/anaxmodule": "^v2.5.6"
 }
 </pre>
 
@@ -16,8 +16,9 @@ After that use the command "composer update".
 
 
 When that is done you simply run.
+<pre>
 bash vendor/danak/anaxmodule/.anax/scaffold/postprocess.d/700_anaxmodule.bash
-
+</pre>
 
 Now it all should be installed and working.
 
