@@ -34,64 +34,64 @@ class DarkSkyControllerTest extends TestCase
     }
 
 
-
-    public function testDarkIndex()
-    {
-        $res = $this->controller->indexAction();
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("object", $testObj);
-    }
-
-
-    public function testJsonIndex()
-    {
-        $res = $this->controller->indexJsonAction();
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("object", $testObj);
-    }
-
-    public function testDarkActionPost()
-    {
-
-        $res = $this->controller->darkActionPost("74.125.224.72");
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("object", $testObj);
+    //
+    // public function testDarkIndex()
+    // {
+    //     $res = $this->controller->indexAction();
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("object", $testObj);
+    // }
 
 
-        $res = $this->controller->darkActionPost("56.2, 15.5167");
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("object", $testObj);
-    }
+    // public function testJsonIndex()
+    // {
+    //     $res = $this->controller->indexJsonAction();
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("object", $testObj);
+    // }
+    //
+    // public function testDarkActionPost()
+    // {
+    //
+    //     $res = $this->controller->darkActionPost("74.125.224.72");
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("object", $testObj);
+    //
+    //
+    //     $res = $this->controller->darkActionPost("56.2, 15.5167");
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("object", $testObj);
+    // }
 
-
-    public function testDarkJsonActionGet()
-    {
-        $res = $this->controller->darkJsonActionGet("74.125.224.72");
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("string", $testObj);
-
-
-        $res = $this->controller->darkJsonActionGet("56.2, 15.5167");
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("string", $testObj);
-
-
-        $res = $this->controller->darkJsonActionGet("56.215.5167");
-        $testObj = gettype($res);
-        print_r($testObj);
-        print_r(gettype($testObj));
-        $this->assertContains("string", $testObj);
-    }
+    // 
+    // public function testDarkJsonActionGet()
+    // {
+    //     $res = $this->controller->darkJsonActionGet("74.125.224.72");
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("string", $testObj);
+    //
+    //
+    //     $res = $this->controller->darkJsonActionGet("56.2, 15.5167");
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("string", $testObj);
+    //
+    //
+    //     $res = $this->controller->darkJsonActionGet("56.215.5167");
+    //     $testObj = gettype($res);
+    //     print_r($testObj);
+    //     print_r(gettype($testObj));
+    //     $this->assertContains("string", $testObj);
+    // }
 }

@@ -34,32 +34,32 @@ class ApiExternalControllerTest extends TestCase
     }
 
 
-
-    public function testIndex()
-    {
-        $res = $this->controller->indexAction();
-        $testObj = gettype($res);
-
-        $this->assertContains("object", $testObj);
-    }
-
-    public function testExternalInfo()
-    {
-        $res = $this->controller->externalInfoAction();
-        $testObj = gettype($res);
-
-        $this->assertContains("object", $testObj);
-    }
-
-
-
-    public function testvalidateipActionGet()
-    {
-
-        $this->controller->setDI($this->di);
-        $this->controller->validateipActionGet("2001:0db8:85a3:08d3:1319:8a2e:0370:7334");
+    //
+    // public function testIndex()
+    // {
+    //     $res = $this->controller->indexAction();
+    //     $testObj = gettype($res);
+    //
+    //     $this->assertContains("object", $testObj);
+    // }
+    //
+    // public function testExternalInfo()
+    // {
+    //     $res = $this->controller->externalInfoAction();
+    //     $testObj = gettype($res);
+    //
+    //     $this->assertContains("object", $testObj);
+    // }
 
 
-        $this->assertContains("htdocs/InternalController/ipinfo/", "htdocs/InternalController/ipinfo/");
-    }
+
+    // public function testvalidateipActionGet()
+    // {
+    //
+    //     $this->controller->setDI($this->di);
+    //     $this->controller->validateipActionGet("2001:0db8:85a3:08d3:1319:8a2e:0370:7334");
+    //
+    //
+    //     $this->assertContains("htdocs/InternalController/ipinfo/", "htdocs/InternalController/ipinfo/");
+    // }
 }

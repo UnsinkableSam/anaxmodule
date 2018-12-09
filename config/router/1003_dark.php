@@ -17,7 +17,7 @@ return [
         [
             "info" => "Dark sky Controller",
             "mount" => "darkSkyController",
-            "handler" => "\Anax\Controller\darkSkyController",
+            "handler" => "\Anax\Controller\DarkSkyController",
 
         ],
     ]
