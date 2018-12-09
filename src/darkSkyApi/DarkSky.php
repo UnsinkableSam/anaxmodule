@@ -75,4 +75,24 @@ class DarkSky
         curl_multi_close($mh);
         return $responseArray;
     }
+
+
+
+
+        public function streetActionGet($lat, $long) : string
+        {
+
+              $curlh  = curl_init('https://nominatim.openstreetmap.org/reverse?email=maraphostv@gmail.com&format=jsonv2&lat=' .$long. "&lon=".$lat);
+
+              curl_setopt($curlh, CURLOPT_RETURNTRANSFER, true);
+
+
+              $json = curl_exec($curlh);
+              curl_close($curlh);
+
+
+              $api_result = json_decode($json, true);
+
+              return $json;
+        }
 }
