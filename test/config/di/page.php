@@ -11,7 +11,7 @@ return [
             "callback" => function () {
                 $page = new \Anax\Page\Page();
                 $page->setDI($this);
-                print_r("helloworld");
+
 
                 // Load the configuration files
                 $cfg = $this->get("configuration");

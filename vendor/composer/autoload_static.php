@@ -9,8 +9,8 @@ class ComposerStaticInite5e8733eaa8181f1e8281c81b612a79c
     public static $files = array (
         'dad3c83ef1e3ff54578ca85d796ce99a' => __DIR__ . '/..' . '/anax/commons/src/functions.php',
         'dfaeffd347c762858ef797ae9655226a' => __DIR__ . '/..' . '/anax/view/src/View/ViewHelperFunctions.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '5f0e95b8df5acf4a92c896dc3ac4bb6e' => __DIR__ . '/..' . '/phpmetrics/phpmetrics/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,8 +24,12 @@ class ComposerStaticInite5e8733eaa8181f1e8281c81b612a79c
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
-            'PhpParser\\' => 10,
+        ),
+        'M' => 
+        array (
+            'Michelf\\' => 8,
         ),
         'D' => 
         array (
@@ -49,13 +53,17 @@ class ComposerStaticInite5e8733eaa8181f1e8281c81b612a79c
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'PhpParser\\' => 
+        'Michelf\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -69,17 +77,20 @@ class ComposerStaticInite5e8733eaa8181f1e8281c81b612a79c
         array (
             0 => __DIR__ . '/../..' . '/src',
             1 => __DIR__ . '/..' . '/anax/anax-lite/src',
-            2 => __DIR__ . '/..' . '/anax/commons/src',
-            3 => __DIR__ . '/..' . '/anax/configure/src',
-            4 => __DIR__ . '/..' . '/anax/controller/src',
-            5 => __DIR__ . '/..' . '/anax/di/src',
-            6 => __DIR__ . '/..' . '/anax/page/src',
-            7 => __DIR__ . '/..' . '/anax/request/src',
-            8 => __DIR__ . '/..' . '/anax/response/src',
-            9 => __DIR__ . '/..' . '/anax/router/src',
-            10 => __DIR__ . '/..' . '/anax/session/src',
-            11 => __DIR__ . '/..' . '/anax/url/src',
-            12 => __DIR__ . '/..' . '/anax/view/src',
+            2 => __DIR__ . '/..' . '/anax/cache/src',
+            3 => __DIR__ . '/..' . '/anax/commons/src',
+            4 => __DIR__ . '/..' . '/anax/configure/src',
+            5 => __DIR__ . '/..' . '/anax/content/src',
+            6 => __DIR__ . '/..' . '/anax/controller/src',
+            7 => __DIR__ . '/..' . '/anax/di/src',
+            8 => __DIR__ . '/..' . '/anax/page/src',
+            9 => __DIR__ . '/..' . '/anax/request/src',
+            10 => __DIR__ . '/..' . '/anax/response/src',
+            11 => __DIR__ . '/..' . '/anax/router/src',
+            12 => __DIR__ . '/..' . '/anax/session/src',
+            13 => __DIR__ . '/..' . '/anax/textfilter/src',
+            14 => __DIR__ . '/..' . '/anax/url/src',
+            15 => __DIR__ . '/..' . '/anax/view/src',
         ),
     );
 
@@ -91,11 +102,22 @@ class ComposerStaticInite5e8733eaa8181f1e8281c81b612a79c
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
         ),
+        'M' => 
+        array (
+            'Michelf' => 
+            array (
+                0 => __DIR__ . '/..' . '/michelf/php-smartypants',
+            ),
+        ),
         'H' => 
         array (
-            'Hal\\' => 
+            'Highlight\\' => 
             array (
-                0 => __DIR__ . '/..' . '/phpmetrics/phpmetrics/src',
+                0 => __DIR__ . '/..' . '/scrivo/highlight.php',
+            ),
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
     );

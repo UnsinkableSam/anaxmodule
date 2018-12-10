@@ -1,48 +1,5 @@
 [
     {
-        "name": "anax/anax-cli",
-        "version": "v1.1.11",
-        "version_normalized": "1.1.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/canax/anax-cli.git",
-            "reference": "c98a69978d8db15267818d88b86a0d1df9d98618"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/canax/anax-cli/zipball/c98a69978d8db15267818d88b86a0d1df9d98618",
-            "reference": "c98a69978d8db15267818d88b86a0d1df9d98618",
-            "shasum": ""
-        },
-        "time": "2018-10-31T15:37:02+00:00",
-        "bin": [
-            "src/anax.bash"
-        ],
-        "type": "utility",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mikael Roos",
-                "email": "mos@dbwebb.se",
-                "homepage": "https://dbwebb.se",
-                "role": "Developer"
-            }
-        ],
-        "description": "Anax CLI tool.",
-        "homepage": "https://dbwebb.se/anax",
-        "keywords": [
-            "boilerplate",
-            "education",
-            "framework",
-            "micro",
-            "mvc"
-        ]
-    },
-    {
         "name": "anax/anax-lite",
         "version": "v1.0.27",
         "version_normalized": "1.0.27.0",
@@ -96,6 +53,54 @@
             "anax",
             "framework",
             "micro framework"
+        ]
+    },
+    {
+        "name": "anax/cache",
+        "version": "v2.0.0-beta.5",
+        "version_normalized": "2.0.0.0-beta5",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/canax/cache.git",
+            "reference": "1004bc303d941fd756e7e1ce13cc64f99a0d5113"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/canax/cache/zipball/1004bc303d941fd756e7e1ce13cc64f99a0d5113",
+            "reference": "1004bc303d941fd756e7e1ce13cc64f99a0d5113",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2",
+            "psr/simple-cache": "^1.0"
+        },
+        "require-dev": {
+            "anax/di": "^2.0.0@alpha",
+            "phpunit/phpunit": "^7"
+        },
+        "time": "2018-10-22T13:29:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Anax\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "mos@dbwebb.se"
+            }
+        ],
+        "description": "Anax Cache module, caching like PSR-6/16.",
+        "homepage": "https://github.com/canax/cache",
+        "keywords": [
+            "anax",
+            "framework"
         ]
     },
     {
@@ -194,6 +199,59 @@
             "boilerplate",
             "education",
             "framework",
+            "mvc"
+        ]
+    },
+    {
+        "name": "anax/content",
+        "version": "v2.0.0-beta.5",
+        "version_normalized": "2.0.0.0-beta5",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/canax/content.git",
+            "reference": "3b90aab003cea1b38eb16f4a4cb4b33412a19130"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/canax/content/zipball/3b90aab003cea1b38eb16f4a4cb4b33412a19130",
+            "reference": "3b90aab003cea1b38eb16f4a4cb4b33412a19130",
+            "shasum": ""
+        },
+        "require": {
+            "anax/commons": "^2.0.0@alpha",
+            "anax/router": "^2.0.0@alpha",
+            "php": ">=7.2"
+        },
+        "require-dev": {
+            "anax/configure": "^2.0.0@alpha",
+            "anax/di": "^2.0.0@alpha",
+            "phpunit/phpunit": "^7"
+        },
+        "time": "2018-12-03T20:41:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Anax\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "mos@dbwebb.se"
+            }
+        ],
+        "description": "Anax Content module, filebased flat file content.",
+        "homepage": "https://dbwebb.se/anax",
+        "keywords": [
+            "boilerplate",
+            "education",
+            "framework",
+            "micro",
             "mvc"
         ]
     },
@@ -565,6 +623,67 @@
         ]
     },
     {
+        "name": "anax/textfilter",
+        "version": "v1.2.4",
+        "version_normalized": "1.2.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/canax/textfilter.git",
+            "reference": "92a609ec7f8caf5f04fbd9a503536239b2cdc4d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/canax/textfilter/zipball/92a609ec7f8caf5f04fbd9a503536239b2cdc4d7",
+            "reference": "92a609ec7f8caf5f04fbd9a503536239b2cdc4d7",
+            "shasum": ""
+        },
+        "require": {
+            "ezyang/htmlpurifier": "^4.0",
+            "michelf/php-markdown": "^1.6",
+            "michelf/php-smartypants": "^1.6",
+            "php": ">=7.0",
+            "scrivo/highlight.php": "^9.0"
+        },
+        "require-dev": {
+            "mustangostang/spyc": "^0.6.2",
+            "phpunit/phpunit": "^7",
+            "symfony/yaml": "^3.4"
+        },
+        "suggest": {
+            "ext-json": "*",
+            "ext-yaml": "*"
+        },
+        "time": "2018-08-15T14:37:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Anax\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "mos@dbwebb.se",
+                "homepage": "https://dbwebb.se",
+                "role": "Developer"
+            }
+        ],
+        "description": "Anax TextFilter module, frontmatter, shortcodes, markdown.",
+        "homepage": "https://dbwebb.se/anax",
+        "keywords": [
+            "anax",
+            "education",
+            "frontmatter",
+            "shortcodes",
+            "textprocessing"
+        ]
+    },
+    {
         "name": "anax/url",
         "version": "v2.0.0-beta.2",
         "version_normalized": "2.0.0.0-beta2",
@@ -723,6 +842,155 @@
         ]
     },
     {
+        "name": "ezyang/htmlpurifier",
+        "version": "v4.10.0",
+        "version_normalized": "4.10.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ezyang/htmlpurifier.git",
+            "reference": "d85d39da4576a6934b72480be6978fb10c860021"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
+            "reference": "d85d39da4576a6934b72480be6978fb10c860021",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "require-dev": {
+            "simpletest/simpletest": "^1.1"
+        },
+        "time": "2018-02-23T01:58:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "HTMLPurifier": "library/"
+            },
+            "files": [
+                "library/HTMLPurifier.composer.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Edward Z. Yang",
+                "email": "admin@htmlpurifier.org",
+                "homepage": "http://ezyang.com"
+            }
+        ],
+        "description": "Standards compliant HTML filter written in PHP",
+        "homepage": "http://htmlpurifier.org/",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "michelf/php-markdown",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/michelf/php-markdown.git",
+            "reference": "01ab082b355bf188d907b9929cd99b2923053495"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
+            "reference": "01ab082b355bf188d907b9929cd99b2923053495",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-01-15T00:49:33+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Michelf\\": "Michelf/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michel Fortin",
+                "email": "michel.fortin@michelf.ca",
+                "homepage": "https://michelf.ca/",
+                "role": "Developer"
+            },
+            {
+                "name": "John Gruber",
+                "homepage": "https://daringfireball.net/"
+            }
+        ],
+        "description": "PHP Markdown",
+        "homepage": "https://michelf.ca/projects/php-markdown/",
+        "keywords": [
+            "markdown"
+        ]
+    },
+    {
+        "name": "michelf/php-smartypants",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/michelf/php-smartypants.git",
+            "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/michelf/php-smartypants/zipball/47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+            "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-12-13T01:01:17+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Michelf": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michel Fortin",
+                "email": "michel.fortin@michelf.ca",
+                "homepage": "https://michelf.ca/",
+                "role": "Developer"
+            },
+            {
+                "name": "John Gruber",
+                "homepage": "https://daringfireball.net/"
+            }
+        ],
+        "description": "PHP SmartyPants",
+        "homepage": "https://michelf.ca/projects/php-smartypants/",
+        "keywords": [
+            "dashes",
+            "quotes",
+            "spaces",
+            "typographer",
+            "typography"
+        ]
+    },
+    {
         "name": "myclabs/deep-copy",
         "version": "1.8.1",
         "version_normalized": "1.8.1.0",
@@ -770,59 +1038,6 @@
             "duplicate",
             "object",
             "object graph"
-        ]
-    },
-    {
-        "name": "nikic/php-parser",
-        "version": "v4.1.0",
-        "version_normalized": "4.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nikic/PHP-Parser.git",
-            "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
-            "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
-            "shasum": ""
-        },
-        "require": {
-            "ext-tokenizer": "*",
-            "php": ">=7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^6.5 || ^7.0"
-        },
-        "time": "2018-10-10T09:24:14+00:00",
-        "bin": [
-            "bin/php-parse"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "PhpParser\\": "lib/PhpParser"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Nikita Popov"
-            }
-        ],
-        "description": "A PHP parser written in PHP",
-        "keywords": [
-            "parser",
-            "php"
         ]
     },
     {
@@ -1087,70 +1302,6 @@
                 "name": "Mike van Riel",
                 "email": "me@mikevanriel.com"
             }
-        ]
-    },
-    {
-        "name": "phpmetrics/phpmetrics",
-        "version": "v2.4.1",
-        "version_normalized": "2.4.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/phpmetrics/PhpMetrics.git",
-            "reference": "39095017413805cd6d9ada16cfaf8aaffcb2fec4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/phpmetrics/PhpMetrics/zipball/39095017413805cd6d9ada16cfaf8aaffcb2fec4",
-            "reference": "39095017413805cd6d9ada16cfaf8aaffcb2fec4",
-            "shasum": ""
-        },
-        "require": {
-            "ext-dom": "*",
-            "ext-tokenizer": "*",
-            "nikic/php-parser": "^3|^4",
-            "php": ">=5.5"
-        },
-        "replace": {
-            "halleck45/php-metrics": "*",
-            "halleck45/phpmetrics": "*"
-        },
-        "require-dev": {
-            "phpunit/phpunit": ">=4.8.27,<=5.7.13",
-            "sebastian/comparator": ">=1.2.3"
-        },
-        "time": "2018-07-10T17:19:33+00:00",
-        "bin": [
-            "bin/phpmetrics"
-        ],
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Hal\\": "./src/"
-            },
-            "files": [
-                "./src/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jean-François Lépine",
-                "email": "lepinejeanfrancois@yahoo.fr",
-                "homepage": "http://www.lepine.pro",
-                "role": "Copyright Holder"
-            }
-        ],
-        "description": "Static analyzer tool for PHP : Coupling, Cyclomatic complexity, Maintainability Index, Halstead's metrics... and more !",
-        "homepage": "http://www.phpmetrics.org",
-        "keywords": [
-            "analysis",
-            "qa",
-            "quality",
-            "testing"
         ]
     },
     {
@@ -1615,6 +1766,117 @@
             "container-interface",
             "container-interop",
             "psr"
+        ]
+    },
+    {
+        "name": "psr/simple-cache",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/simple-cache.git",
+            "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+            "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2017-10-23T01:57:42+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\SimpleCache\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interfaces for simple caching",
+        "keywords": [
+            "cache",
+            "caching",
+            "psr",
+            "psr-16",
+            "simple-cache"
+        ]
+    },
+    {
+        "name": "scrivo/highlight.php",
+        "version": "v9.13.1.0",
+        "version_normalized": "9.13.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/scrivo/highlight.php.git",
+            "reference": "e453ed4bb1a7602efb334c07579be885a4ee8abb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/e453ed4bb1a7602efb334c07579be885a4ee8abb",
+            "reference": "e453ed4bb1a7602efb334c07579be885a4ee8abb",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "ext-mbstring": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8",
+            "symfony/finder": "^2.8"
+        },
+        "time": "2018-11-23T02:08:01+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Highlight\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Geert Bergman",
+                "homepage": "http://www.scrivo.org/",
+                "role": "Project Author"
+            },
+            {
+                "name": "Vladimir Jimenez",
+                "homepage": "https://allejo.io",
+                "role": "Contributor"
+            },
+            {
+                "name": "Martin Folkers",
+                "homepage": "https://twobrain.io",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
+        "keywords": [
+            "code",
+            "highlight",
+            "highlight.js",
+            "highlight.php",
+            "syntax"
         ]
     },
     {

@@ -8,6 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'dad3c83ef1e3ff54578ca85d796ce99a' => $vendorDir . '/anax/commons/src/functions.php',
     'dfaeffd347c762858ef797ae9655226a' => $vendorDir . '/anax/view/src/View/ViewHelperFunctions.php',
+    '2cffec82183ee1cea088009cef9a6fc3' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-    '5f0e95b8df5acf4a92c896dc3ac4bb6e' => $vendorDir . '/phpmetrics/phpmetrics/src/functions.php',
 );
