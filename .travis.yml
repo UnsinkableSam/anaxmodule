@@ -15,6 +15,7 @@ matrix:
         - php: nightly
 
 before_script:
+    - composer update
     - make install check
 
 script:
