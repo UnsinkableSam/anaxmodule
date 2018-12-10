@@ -15,9 +15,7 @@ matrix:
         - php: nightly
 
 before_script:
-    - make install
+    - make install check
 
 script:
-    - make check
     - make test
-  
