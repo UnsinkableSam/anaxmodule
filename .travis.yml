@@ -13,16 +13,3 @@ git:
 matrix:
     allow_failures:
         - php: nightly
-        - php: hhvm
-
-# addons:
-#     sonarcloud:
-#         organization: "canax"
-
-before_script:
-    - make install
-
-script:
-    - make check
-    - make test
-    #- sonar-scanner
