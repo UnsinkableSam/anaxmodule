@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0
+class ComposerStaticInite4801916d1f8ea0c61ebfa0f5e6ccf6e
 {
     public static $files = array (
         'dad3c83ef1e3ff54578ca85d796ce99a' => __DIR__ . '/..' . '/anax/commons/src/functions.php',
@@ -646,10 +646,10 @@ class ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit2f8c900f9e1ddddf9c949cb81df1f9d0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite4801916d1f8ea0c61ebfa0f5e6ccf6e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite4801916d1f8ea0c61ebfa0f5e6ccf6e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite4801916d1f8ea0c61ebfa0f5e6ccf6e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInite4801916d1f8ea0c61ebfa0f5e6ccf6e::$classMap;
 
         }, null, ClassLoader::class);
     }
