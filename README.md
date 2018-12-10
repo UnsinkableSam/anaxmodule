@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/UnsinkableSam/anaxmodule.svg?branch=master)](https://travis-ci.org/UnsinkableSam/anaxmodule)
 Install as Anax module
 This is how you install the module into an existing Anax installation.
 
