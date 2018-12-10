@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1544425013">
-  <project timestamp="1544425013">
+<coverage generated="1544426190">
+  <project timestamp="1544426190">
     <package name="Anax\Controller">
       <file name="/Users/sampettersson/dbwebb-kurser/ramverk1/me/anaxmodule/src/Controller/ApiExternalController.php">
         <class name="Anax\Controller\ApiExternalController" namespace="Anax\Controller">
