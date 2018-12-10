@@ -13,3 +13,11 @@ git:
 matrix:
     allow_failures:
         - php: nightly
+
+before_script:
+    - make install
+
+script:
+    - make check
+    - make test
+  
