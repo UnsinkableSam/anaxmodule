@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eaf2057e87bb347e83a1bf59ac043025",
+    "content-hash": "58f9c90e685dd46474509f6627b75de5",
     "packages": [
+        {
+            "name": "anax/anax-cli",
+            "version": "v1.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/canax/anax-cli.git",
+                "reference": "c98a69978d8db15267818d88b86a0d1df9d98618"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/canax/anax-cli/zipball/c98a69978d8db15267818d88b86a0d1df9d98618",
+                "reference": "c98a69978d8db15267818d88b86a0d1df9d98618",
+                "shasum": ""
+            },
+            "bin": [
+                "src/anax.bash"
+            ],
+            "type": "utility",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "mos@dbwebb.se",
+                    "homepage": "https://dbwebb.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Anax CLI tool.",
+            "homepage": "https://dbwebb.se/anax",
+            "keywords": [
+                "boilerplate",
+                "education",
+                "framework",
+                "micro",
+                "mvc"
+            ],
+            "time": "2018-10-31T15:37:02+00:00"
+        },
         {
             "name": "anax/commons",
             "version": "v2.0.0-beta.13",

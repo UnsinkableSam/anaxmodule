@@ -1,1 +1,6 @@
 *.a
+*.vendor
+*.build
+*.bin
+memory::
+composer.lock

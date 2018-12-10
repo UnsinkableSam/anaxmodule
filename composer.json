@@ -25,7 +25,8 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.2",
-        "anax/commons": "^2.0.0@beta"
+        "anax/commons": "^2.0.0@beta",
+        "anax/anax-cli": "^1.1"
     },
     "require-dev": {
         "phpmetrics/phpmetrics": "^2",
