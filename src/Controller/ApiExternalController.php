@@ -79,7 +79,7 @@ class ApiExternalController implements ContainerInjectableInterface
     public function validateipActionGet($ipAdress = null) : void
     {
         $keykey = $this->di->get("apikey");
-
+        $ipInfo = array();
         // if ($this->di->get("request")->getGet("ip")) {
         //     $ipInfo["IP"] = $this->di->get("request")->getGet("ip") ?? $ipAdress;
         //     // $ipAdress = $this->di->request->getGet("ip");
