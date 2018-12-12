@@ -15,6 +15,7 @@ build:
             tests:
                 override:
                     -
+                        command: "composer update"
                         command: "make phpunit"
                         coverage:
                             file: "build/coverage.clover"
