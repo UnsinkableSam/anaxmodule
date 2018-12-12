@@ -59,6 +59,7 @@ class DarkSkyController implements ContainerInjectableInterface
         $keykey = $this->di->get("apikey");
         $darkSkyKey = $this->di->get("apikeyDarkSky");
         $time = $this->di->get("request")->getPost("date") ?? "";
+        $ipInfo = array();
         $ipInfo["IP"] = $this->di->get("request")->getPost("ip") ?? $ipAdress;
         $array = [];
         $apiEx =  $this->di->get("ExternalApi");

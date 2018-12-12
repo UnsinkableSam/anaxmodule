@@ -89,7 +89,7 @@ class ApiExternalController implements ContainerInjectableInterface
         $ipInfo["IP"] = $this->di->get("request")->getGet("ip") ?? $ipAdress;
         $apiEx =  $this->di->get("ExternalApi");
         $res = $apiEx->validateipActionGet($ipInfo["IP"], $keykey);
-        $obj = $res;
+
         $obj = json_decode($res);
 
 
